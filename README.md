@@ -33,16 +33,6 @@ A Django web application that analyzes resumes using AI and provides professiona
 
 ---
 
-## Environment Variables
-
-| Variable | Description |
-|----------|-------------|
-| `SECRET_KEY` | Django secret key |
-| `GROQ_API_KEY` | Groq API key (get one at [console.groq.com](https://console.groq.com)) |
-| `DEBUG` | Set to `False` in production |
-
----
-
 ## Author
 
 **Asadbek Xamidov** — [GitHub](https://github.com/xamidovasadbekdev-arch)

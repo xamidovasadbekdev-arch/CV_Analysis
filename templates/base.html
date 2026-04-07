@@ -13,11 +13,13 @@
         <a class="navbar-brand" href="#">CV Analyzer</a>
         <div class="ms-auto">
             {% if user.is_authenticated %}
-                <span class="text-white me-3">{{ user.username }}</span>
-                <form method="post" action="{% url 'logout' %}">
-                    {% csrf_token %}
-                    <button type="submit" class="btn btn-outline-light btn-sm">Logout</button>
-                </form>
+                <div class="d-flex align-items-center gap-2">
+                    <span>{{ user.username }}</span>
+                    <form method="post" action="{% url 'logout' %}">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-outline-light btn-sm">Logout</button>
+                    </form>
+                </div>
             {% else %}
                 <a href="{% url 'login' %}" class="btn btn-outline-light btn-sm">Login</a>
             {% endif %}
